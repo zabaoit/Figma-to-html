@@ -16,7 +16,6 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
-
 /* =================common================== */
 a {
   text-decoration: none;
@@ -56,7 +55,6 @@ a {
   margin-right: auto;
 }
 
-/* Làm dấu 3 chấm */
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: var(--line-clamp, 1);
@@ -64,14 +62,13 @@ a {
   overflow: hidden;
 }
 
-.line-clamp.line2 {
+.line-clamp.line-2 {
   --line-clamp: 2;
 }
 
 .break-all {
   word-break: break-all;
 }
-
 /* =================header================== */
 .header {
   background: #fffcf4;
@@ -82,7 +79,6 @@ a {
   position: sticky;
   top: -28px;
 }
-
 .header .body {
   display: flex;
   align-items: center;
@@ -92,7 +88,6 @@ a {
 .nav {
   margin-left: auto;
 }
-
 .nav ul {
   display: flex;
 }
@@ -170,7 +165,7 @@ a {
   align-items: center;
 }
 
-.hero-summary .item+.item {
+.hero-summary .item + .item {
   margin-top: 22px;
 }
 
@@ -199,16 +194,14 @@ a {
 .hero-summary .label {
   color: #5f5b53;
   font-size: 1.4rem;
-  line-height: 1.86;
-  /* 185.714% */
+  line-height: 1.86; /* 185.714% */
 }
 
 .hero-summary .title {
   color: #171100;
   font-size: 1.8rem;
   font-weight: 600;
-  line-height: 1.67;
-  /* 166.667% */
+  line-height: 1.67; /* 166.667% */
 }
 
 /* =========== hero right======== */
@@ -338,166 +331,202 @@ a {
   cursor: pointer;
 }
 
-.popular .courses-list {
-  gap: 30px;
+.popular .course-list {
   display: flex;
+  gap: 30px;
   margin-top: 55px;
 }
 
-.popular .courses-item {
+.popular .course-item {
   flex: 1;
   border-radius: 12px;
-  border: 1px solid #E2DFDA;
-  background: #FFF;
+  border: 1px solid #e2dfda;
+  background: #fff;
 }
 
-.popular .courses-item:hover {
+.popular .course-item:hover {
   border: 1px solid transparent;
   border-radius: 12px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
 }
 
-.popular .courses-item .thumb {
+.popular .course-item .thumb {
   border-radius: 12px 12px 0px 0px;
   height: 278px;
   object-fit: cover;
   width: 100%;
 }
 
-.popular .courses-item .info {
+.popular .course-item .info {
   padding: 16px 22px 22px;
 }
 
-.popular .courses-item .head {
+.popular .course-item .foot,
+.popular .course-item .rating,
+.popular .course-item .head {
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: space-between;
 }
 
-.popular .courses-item .title a {
+.popular .course-item .title a {
   color: #171100;
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.67;
-  /* 166.667% */
-}
-
-.popular .courses-item .foot,
-.popular .courses-item .rating {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .popular .rating .value {
   margin-left: 6px;
-  color: #FEA31B;
-  font-size: 1.6rem;
-  line-height: 175%;
-  /* 175% */
+  color: #fea31b;
+  font-size: 16px;
+  line-height: 1.75;
 }
 
-.popular .courses-item .desc {
+.popular .course-item .desc {
   margin-top: 6px;
-  color: #5F5B53;
+  color: #5f5b53;
   font-size: 1.4rem;
   line-height: 1.86;
-  /* 185.714% */
 }
 
-.popular .courses-item .foot {
+.popular .course-item .foot {
   margin-top: 12px;
-
 }
 
-.popular .courses-item .price {
+.popular .course-item .price {
   color: #171100;
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.67;
-  /* 166.667% */
 }
 
-.popular .courses-item .btn-book {
+.popular .course-item .btn-book {
   border: none;
 }
 
-.popular .courses-item .btn-book:hover {
-  background-color: var(--primary-color);
+.popular .course-item .btn-book:hover {
+  background: var(--primary-color);
 }
 
-/* =================feedback=================== */
+/* =================feedback================== */
 .feedback {
   margin-top: 135px;
   padding: 96px 0;
-  background: #2E2100;
+  background: #2e2100;
 }
 
-.feedback-list{
+.feedback-list {
   display: flex;
   overflow: hidden;
 }
 
-.feedback .feedback-item {
+.feedback-item {
   width: 100%;
   display: flex;
   flex-shrink: 0;
 }
 
-.feedback-item .avata {
+.feedback-item .avatar {
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  /* hình tròn 50% */
   object-fit: cover;
-  background: url(<path-to-image>) lightgray -51.126px -33.052px / 228.267% 342.4% no-repeat;
 }
 
 .feedback-item .info .member-name {
   margin-top: 18px;
-  color: #F7F7F7;
+  color: #f7f7f7;
   font-family: var(--font-heading);
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.42;
-  /* 141.667% */
 }
 
 .feedback-item .info .desc {
   margin-top: 4px;
-  color: #BFBCB2;
+  color: #bfbcb2;
   font-size: 1.4rem;
   line-height: 1.86;
-  /* 185.714% */
 }
 
 .feedback-item .dots {
   gap: 6px;
-  margin-top: 28px;
   display: flex;
+  margin-top: 28px;
 }
 
 .feedback-item .dot {
   height: 6px;
   width: 6px;
   border-radius: 50%;
-  background-color: #634700;
+  background: #634700;
   cursor: pointer;
 }
-.feedback-item .dot.active{
+
+.feedback-item .dot.active {
   background: var(--primary-color);
-  cursor: defaults;
+  cursor: default;
 }
+
 .feedback-item .content {
   width: 66%;
   margin-left: auto;
 }
 
 .feedback-item blockquote {
-  color: #FFF;
+  color: #fff;
   font-size: 2.6rem;
   font-style: italic;
   line-height: 1.54;
-  /* 153.846% */
+}
+
+/* =================features================== */
+
+.features {
+  margin-top: 135px;
+  padding: 65px 0;
+}
+
+.features .body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features .images {
+  display: flex;
+  gap: 30px;
+}
+
+.features .images img {
+  width: 270px;
+  height: 405px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.features .lower {
+  margin-top: 34px;
+}
+
+.features .content {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features .desc {
+  margin-top: 16px;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+.features .cta-btn {
+  margin-top: 32px;
+  width: 137px;
+  height: 50px;
+  background: var(--primary-color);
 }
