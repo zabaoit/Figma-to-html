@@ -55,7 +55,8 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
- /* Làm dấu 3 chấm */
+
+/* Làm dấu 3 chấm */
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: var(--line-clamp, 1);
@@ -63,11 +64,11 @@ a {
   overflow: hidden;
 }
 
-.line-clamp.line2{
+.line-clamp.line2 {
   --line-clamp: 2;
 }
 
-.break-all{
+.break-all {
   word-break: break-all;
 }
 
@@ -374,7 +375,7 @@ a {
   justify-content: space-between;
 }
 
-.popular .courses-item .title a{
+.popular .courses-item .title a {
   color: #171100;
   font-size: 1.8rem;
   font-weight: 600;
@@ -424,4 +425,72 @@ a {
 
 .popular .courses-item .btn-book:hover {
   background-color: var(--primary-color);
+}
+
+/* =================feedback=================== */
+.feedback {
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #2E2100;
+}
+
+.feedback .feedback-item {
+  display: flex;
+}
+
+.feedback-item .avata {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  /* hình tròn 50% */
+  object-fit: cover;
+  background: url(<path-to-image>) lightgray -51.126px -33.052px / 228.267% 342.4% no-repeat;
+}
+
+.feedback-item .info .member-name {
+  margin-top: 18px;
+  color: #F7F7F7;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42;
+  /* 141.667% */
+}
+
+.feedback-item .info .desc {
+  margin-top: 4px;
+  color: #BFBCB2;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  /* 185.714% */
+}
+
+.feedback-item .dots {
+  gap: 6px;
+  margin-top: 28px;
+  display: flex;
+}
+
+.feedback-item .dot {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: #634700;
+  cursor: pointer;
+}
+.feedback-item .dot.active{
+  background: var(--primary-color);
+  cursor: defaults;
+}
+.feedback-item .content {
+  width: 66%;
+  margin-left: auto;
+}
+
+.feedback-item blockquote {
+  color: #FFF;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.54;
+  /* 153.846% */
 }
