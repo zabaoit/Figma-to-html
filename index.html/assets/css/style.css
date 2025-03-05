@@ -655,7 +655,7 @@ a {
   background: var(--primary-color);
 }
 
-.blog .dots{
+.blog .dots {
   margin-top: 38px;
   display: flex;
   justify-content: center;
@@ -663,7 +663,7 @@ a {
 
 }
 
-.blog .dot{
+.blog .dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -671,7 +671,88 @@ a {
   cursor: pointer;
 }
 
-.blog .dot.active{
+.blog .dot.active {
   background: #FFB900;
   cursor: default;
+}
+
+/* ================= footer================ */
+footer {
+  background: #2E2100;
+  padding: 96px 135px 0;
+}
+
+.footer .row {
+  display: flex;
+  padding-bottom: 38px;
+  border-bottom: 1px solid #59554B;
+  ;
+}
+
+footer .row .column {
+  width: 21.6%;
+}
+
+footer .row .column:first-child {
+  width: 35%;
+}
+
+.footer .desc {
+  margin-top: 18px;
+  max-width: 267px;
+  color: #BFBCB2;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.footer .social {
+  margin-top: 18px;
+  display: flex;
+  gap: 18px;
+}
+
+.footer .title {
+  padding-bottom: 14px;
+  padding-right: 48px;
+  border-bottom: 1px solid #59554B;
+  display: inline-block;
+  color: #FFF;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+  /* 175% */
+}
+
+.footer .list {
+  margin-top: 28px;
+}
+
+.footer .list a {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #BFBCB2;
+  font-size: 1.4rem;
+  line-height: 1.8686;
+  /* 185.714% */
+}
+
+.footer .list li:last-child a {
+  margin-bottom: 0;
+}
+
+.footer .list strong {
+  color: #FFF;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86;
+  /* 185.714% */
+}
+
+.footer .copyright {
+  padding: 28px 0;
+  color: #807D74;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  /* 185.714% */
 }
