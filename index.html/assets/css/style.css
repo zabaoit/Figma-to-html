@@ -16,6 +16,7 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
+
 /* =================common================== */
 a {
   text-decoration: none;
@@ -69,6 +70,7 @@ a {
 .break-all {
   word-break: break-all;
 }
+
 /* =================header================== */
 .header {
   background: #fffcf4;
@@ -79,6 +81,7 @@ a {
   position: sticky;
   top: -28px;
 }
+
 .header .body {
   display: flex;
   align-items: center;
@@ -88,6 +91,7 @@ a {
 .nav {
   margin-left: auto;
 }
+
 .nav ul {
   display: flex;
 }
@@ -165,7 +169,7 @@ a {
   align-items: center;
 }
 
-.hero-summary .item + .item {
+.hero-summary .item+.item {
   margin-top: 22px;
 }
 
@@ -194,14 +198,16 @@ a {
 .hero-summary .label {
   color: #5f5b53;
   font-size: 1.4rem;
-  line-height: 1.86; /* 185.714% */
+  line-height: 1.86;
+  /* 185.714% */
 }
 
 .hero-summary .title {
   color: #171100;
   font-size: 1.8rem;
   font-weight: 600;
-  line-height: 1.67; /* 166.667% */
+  line-height: 1.67;
+  /* 166.667% */
 }
 
 /* =========== hero right======== */
@@ -482,7 +488,7 @@ a {
   line-height: 1.54;
 }
 
-/* =================features================== */
+/* =================features 1================== */
 
 .features {
   margin-top: 135px;
@@ -529,4 +535,21 @@ a {
   width: 137px;
   height: 50px;
   background: var(--primary-color);
+}
+
+/* =================features 2================== */
+.features-2{
+  margin-top: 70px;
+}
+.features-2 .body {
+  flex-direction: row-reverse;
+}
+
+.features-2 .images img {
+  width: 470px;
+  height: 440px;
+}
+
+.features-2 .content {
+  width: 49%
 }
